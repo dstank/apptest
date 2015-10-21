@@ -40,6 +40,6 @@ class WorkersController < ApplicationController
  	params.require(:worker).permit(:name, :lastname, :occupation, :phone, :references, :descript)
    end
    
-  
+  #test github
 
 end
