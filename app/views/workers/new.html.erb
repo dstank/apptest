@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<% render "shared/footer.html.erb" %>
+<div style="float: right";>
+<%= simple_form_for @worker do |f| %>
+ <p class="emb">
+  <%= f.label :ime%>
+  <%= f.text_field :name %></p>
+   <p class="emb">
+  <%= f.label :prezime%>
+  <%= f.text_field :lastname %></p>
+  <p class="emb">
+  <%= f.label :zanimanje%>
+  <%= f.text_field :occupation %>
+  <p class="emb">
+  <%= f.label :telefon%>
+  <%= f.text_field :phone %>
+  <p class="emb">
+  <%= f.label :preporuke%>
+  <%= f.text_field :references %>
+  <p class="emb">
+  <%= f.label :opis%>
+  <%= f.text_field :descript %></br>
+  <%= f.submit  "create" %>
+<% end %>
+</div>
+
+
+
+
+</body>
+
+
